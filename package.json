@@ -1,0 +1,31 @@
+{
+  "name": "pixiv-api",
+  "version": "0.0.0",
+  "description": "My terrific module",
+  "license": "MIT",
+  "repository": "akameco/pixiv-api",
+  "author": {
+    "name": "akameco",
+    "email": "akameco.t@gmail.com",
+    "url": "akameco.github.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "micro",
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "axios": "^0.16.1",
+    "micro": "^7.3.2",
+    "micro-cors": "^0.0.4"
+  },
+  "devDependencies": {}
+}
