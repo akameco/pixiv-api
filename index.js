@@ -17,9 +17,7 @@ const instance = axios.create({
 module.exports = cors(async (req, res) => {
   let opts = {
     method: req.method,
-    headers: {
-      authorization: req.headers.authorization,
-    },
+		headers: {},
   }
 
   if (req.method.toLowerCase() === 'post') {
@@ -29,10 +27,12 @@ module.exports = cors(async (req, res) => {
       data: stringify(js),
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        authorization: req.headers.authorization,
       },
     })
   }
+	if (req.headers.authorization) {
+		opts.headers.authorization = req.headers.authorization
+	}
   const { data } = await instance(req.url, opts)
   return data
 })

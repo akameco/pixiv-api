@@ -1,7 +1,7 @@
 {
   "name": "pixiv-api",
   "version": "0.0.0",
-  "description": "My terrific module",
+  "description": "pixiv api",
   "license": "MIT",
   "repository": "akameco/pixiv-api",
   "author": {
@@ -10,18 +10,11 @@
     "url": "akameco.github.io"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
-    "start": "micro",
-    "test": "xo && ava"
+    "start": "micro"
   },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    ""
-  ],
   "dependencies": {
     "axios": "^0.16.1",
     "micro": "^7.3.2",
